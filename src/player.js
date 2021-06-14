@@ -2,12 +2,12 @@ import React, { useState } from 'react'
 import ReactHlsPlayer from 'react-hls-player'
 
 function Player() {
-  //const Src = 'http://15.206.121.123:8080/hls/show.m3u8'
-  const [data, setData] = useState('http://15.206.121.123:8080/hls/.m3u8')
+  //const Src = 'http://YOURSERVERIP:PORT/hls/show.m3u8'
+  const [data, setData] = useState('http://YOURSERVERIP:PORT/hls/.m3u8')
   //const test = 'abcd'
   const Copy = (val) => {
-    //console.log('http://15.206.121.123:8080/hls/' + val.target.value + '.m3u8')
-    setData('http://15.206.121.123:8080/hls/' + val.target.value + '.m3u8')
+    //console.log('http://YOURSERVERIP:PORT/hls/' + val.target.value + '.m3u8')
+    setData('http://YOURSERVERIP:PORT/hls/' + val.target.value + '.m3u8')
   }
   return (
     <>
