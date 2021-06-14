@@ -1,21 +1,31 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ReactHlsPlayer from 'react-hls-player'
 
-function player() {
+function Player() {
+  //const Src = 'http://15.206.121.123:8080/hls/show.m3u8'
+  const [data, setData] = useState('http://15.206.121.123:8080/hls/.m3u8')
+  //const test = 'abcd'
+  const Copy = (val) => {
+    //console.log('http://15.206.121.123:8080/hls/' + val.target.value + '.m3u8')
+    setData('http://15.206.121.123:8080/hls/' + val.target.value + '.m3u8')
+  }
   return (
-    <ReactHlsPlayer
-      src='http://YOURSTREAMIP:PORT/hls/STREAMAUTHKEY.m3u8'
-      hlsConfig={{
-        maxLoadingDelay: 4,
-        minAutoBitrate: 0,
-        lowLatencyMode: true,
-      }}
-      autoPlay={true}
-      controls={true}
-      width='100%'
-      height='auto'
-    />
+    <>
+      <ReactHlsPlayer
+        src={data}
+        hlsConfig={{
+          maxLoadingDelay: 4,
+          minAutoBitrate: 0,
+          lowLatencyMode: true,
+        }}
+        autoPlay={true}
+        controls={true}
+        width='100%'
+        height='auto'
+      ></ReactHlsPlayer>
+      <input type='text' onChange={Copy}></input>
+    </>
   )
 }
 
-export default player
+export default Player
