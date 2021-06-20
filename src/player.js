@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import ReactHlsPlayer from 'react-hls-player'
+import './player.css'
 
 function Player() {
   //const Src = 'http://YOURSERVERIP:PORT/hls/show.m3u8'
@@ -23,7 +24,10 @@ function Player() {
         width='100%'
         height='auto'
       ></ReactHlsPlayer>
-      <input type='text' onChange={Copy}></input>
+      <div>
+        <label className='name'>Stream ID:</label>
+        <input type='text' onChange={Copy} className='box'></input>
+      </div>
     </>
   )
 }
