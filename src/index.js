@@ -1,11 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import './index.css'
-import Player from './player'
+import App from './app'
+import './app.css'
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Player />
-  </React.StrictMode>,
+  <>
+    <App />
+  </>,
   document.getElementById('root')
 )
