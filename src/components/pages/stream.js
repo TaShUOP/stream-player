@@ -1,6 +1,5 @@
 import React from 'react'
 import Player from '../player'
-import '../player.css'
 
 function stream() {
   return (
