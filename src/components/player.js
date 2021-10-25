@@ -5,7 +5,7 @@ import './player.css'
 function Player() {
   //const Src = 'http://YOURSERVERIP:PORT/hls/show.m3u8'
   const [data, setData] = useState(
-    'http://3422-103-80-62-6.in.ngrok.io/hls/.m3u8'
+    'https://3422-103-80-62-6.in.ngrok.io/hls/.m3u8'
   )
   //const test = 'abcd'
   const Copy = (val) => {
