@@ -1,11 +1,13 @@
 import React from 'react'
 import Player from '../player'
+import Navbar from '../Navbar'
 
 function stream() {
   return (
-    <React.StrictMode>
+    <>
+      <Navbar />
       <Player />
-    </React.StrictMode>
+    </>
   )
 }
 

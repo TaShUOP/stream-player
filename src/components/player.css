@@ -1,0 +1,17 @@
+.stream {
+  width: 10px;
+  height: 10px;
+}
+
+.data {
+  left: 10px;
+  margin-top: 10px;
+  background: rgb(0, 0, 0);
+}
+
+.name {
+  color: rgb(255, 255, 255);
+}
+.box {
+  margin-left: 10px;
+}

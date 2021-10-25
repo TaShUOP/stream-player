@@ -1,10 +1,14 @@
 import React from 'react'
+import Navbar from '../Navbar'
 
 function contact() {
   return (
-    <div>
-      <h1>heelo</h1>
-    </div>
+    <>
+      <Navbar />
+      <div>
+        <h1>heelo</h1>
+      </div>
+    </>
   )
 }
 
