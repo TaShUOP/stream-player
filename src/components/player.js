@@ -5,13 +5,13 @@ import './player.css'
 function Player() {
   //const Src = 'http://YOURSERVERIP:PORT/hls/show.m3u8'
   const [data, setData] = useState(
-    'https://5f9c-103-80-62-197.in.ngrok.io/hls/.m3u8'
+    'https://b7b2-103-80-60-18.in.ngrok.io/hls/.m3u8'
   )
   //const test = 'abcd'
   const Copy = (val) => {
     //console.log('http://YOURSERVERIP:PORT/hls/' + val.target.value + '.m3u8')
     setData(
-      'https://5f9c-103-80-62-197.in.ngrok.io/hls/' + val.target.value + '.m3u8'
+      'https://b7b2-103-80-60-18.in.ngrok.io/hls/' + val.target.value + '.m3u8'
     )
   }
   return (
