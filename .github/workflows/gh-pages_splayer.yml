@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'splayer'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D81BDA7365D643E5820D2716A2B9CE8F }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A4E88D8661984493B5C729D169088486 }}
           package: .
